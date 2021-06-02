@@ -1,11 +1,11 @@
 package kodlamaio.northwind.entity.concretes;
 
 import javax.persistence.Column;
+
 import javax.persistence.Entity;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
-import kodlamaio.northwind.entity.abstracts.Entities;
 import kodlamaio.northwind.entity.abstracts.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Employee extends User implements Entities {
+public class Employee extends User {
 	@Column(name = "firs_name")
 	private String firstName;
 	@Column(name = "last_name")
