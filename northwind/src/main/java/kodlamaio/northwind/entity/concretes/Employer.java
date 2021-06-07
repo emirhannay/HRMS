@@ -1,10 +1,16 @@
 package kodlamaio.northwind.entity.concretes;
 
 
+import java.util.List;
+
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import kodlamaio.northwind.entity.abstracts.User;
 import lombok.AllArgsConstructor;
@@ -17,6 +23,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@JsonIgnoreProperties({"hibernateLazyInitializer","handler","jobAdverts"})
 public class Employer extends User{
 	@Column(name = "company_name")
 	private String companyName;
@@ -26,4 +33,7 @@ public class Employer extends User{
 	private String phoneNumber;
 	@Column(name = "is_verified", columnDefinition = "boolean default false")
 	private boolean isVerified = false;
+	
+	@OneToMany(mappedBy = "employer")
+	private List<JobAdvert> jobAdverts;
 }

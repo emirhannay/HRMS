@@ -34,4 +34,4 @@ public class City {
 	@OneToMany(mappedBy = "city")
 	private List<JobAdvert> jobAdverts;
 }
- 
+  

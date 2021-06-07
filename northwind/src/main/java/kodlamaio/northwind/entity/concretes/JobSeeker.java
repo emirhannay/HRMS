@@ -45,7 +45,7 @@ public class JobSeeker extends User {
 	@Column(name ="is_verified")
 	private boolean isVerified;
 	
-	
+
 	
 
 	

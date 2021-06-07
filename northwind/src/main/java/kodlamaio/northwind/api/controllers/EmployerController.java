@@ -2,6 +2,7 @@ package kodlamaio.northwind.api.controllers;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +18,7 @@ import kodlamaio.northwind.entity.concretes.Employer;
 public class EmployerController {
 	private EmployerService employerService;
 
-	
+	@Autowired
 	public EmployerController(EmployerService employerService) {
 		super();
 		this.employerService = employerService;

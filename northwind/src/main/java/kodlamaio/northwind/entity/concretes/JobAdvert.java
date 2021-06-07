@@ -43,7 +43,7 @@ public class JobAdvert {
 	
 	@Column(name = "published_at")
 	private LocalDate publishedAt;
-	
+	 
 	@Column(name = "created_at")
 	private LocalDate createdAt;
 	
