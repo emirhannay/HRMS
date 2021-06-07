@@ -34,9 +34,9 @@ V3 :
 
 >All active job adverts in the system can be listed.
 
->All active job postings in the system can be listed by date.
+>All active job adverts in the system can be listed by date.
 
->All active job postings of a company can be listed in the system.
+>All active job adverts of a company can be listed in the system.
 
 >Employers can close a advert in the system.
 
