@@ -34,7 +34,7 @@ public class JobAdvert {
 	
 	@Column(name = "salary_max")
 	private int salaryMax;
-	
+	 
 	@Column(name = "open_position_count")
 	private int openPositionCount;	
 	
