@@ -28,3 +28,15 @@ V2 :
 
 >The necessary "getAll" structure to list the employee has been established.
 
+V3 :
+
+> Employers can add job adverts to the system.
+
+>All active job adverts in the system can be listed.
+
+>All active job adverts in the system can be listed by date.
+
+>All active job adverts of a company can be listed in the system.
+
+>Employers can close a advert in the system.
+
