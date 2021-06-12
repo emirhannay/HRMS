@@ -1,12 +1,10 @@
 package kodlamaio.northwind.entity.concretes;
 
-import java.time.LocalDate;
+
+
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -18,12 +16,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class VerificationCode {
+public class VerificationCode extends Base{
 	
-	@Id
-	@GeneratedValue (strategy = GenerationType.IDENTITY)
-	@Column(name="id")
-	private int id;
 	
 	@Column(name="user_id")
 	private int userId;
@@ -34,16 +28,6 @@ public class VerificationCode {
 	@Column(name ="is_confirmed")
 	private boolean isConfirmed;
 	
-	@Column(name="created_at", columnDefinition = "Date defult CURRENT_DATE")
-	private LocalDate createAt = LocalDate.now();
 	
-
-	public VerificationCode(int userId, String code, boolean isConfirmed, LocalDate createAt) {
-		super();
-		this.userId = userId;
-		this.code = code;
-		this.isConfirmed = isConfirmed;
-		this.createAt = createAt;
-	}
 	
 }

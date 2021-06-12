@@ -19,8 +19,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "job_adverts")
 @NoArgsConstructor
 @AllArgsConstructor
-
-public class JobAdvert {
+public class JobAdvert extends Base{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id")
@@ -34,28 +33,19 @@ public class JobAdvert {
 	
 	@Column(name = "salary_max")
 	private int salaryMax;
-	 
+	
 	@Column(name = "open_position_count")
-	private int openPositionCount;	
+	private int openPositionCount;
 	
 	@Column(name = "deadline")
 	private LocalDate deadline;
 	
 	@Column(name = "published_at")
 	private LocalDate publishedAt;
-	 
-	@Column(name = "created_at")
-	private LocalDate createdAt;
 	
 	@Column(name = "is_open")
 	private boolean isOpen;
-	
-	@Column(name = "is_active")
-	private boolean isActive;
-	
-	@Column(name = "is_deleted")
-	private boolean isDeleted;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "job_position_id")
 	private JobPosition jobPosition;
