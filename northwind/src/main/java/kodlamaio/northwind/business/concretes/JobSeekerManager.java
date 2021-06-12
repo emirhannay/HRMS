@@ -37,7 +37,7 @@ public class JobSeekerManager implements JobSeekerService {
 	@Override
 	public Result add(JobSeeker jobSeeker) {
 		verificationService.sendLink(jobSeeker.getEmail());
-		if (validationService.validateByMernis(jobSeeker.getIdentificationNo(), jobSeeker.getFirstName(),
+		if (validationService.validateByMernis(jobSeeker.getNationalId(), jobSeeker.getFirstName(),
 				jobSeeker.getLastName(), jobSeeker.getBirthDate().getYear()) & verificationService.isUserClickedToLink()
 				& jobSeekerValidationManager.checkEmailSingularity(jobSeeker)
 				& jobSeekerValidationManager.checkIdentificationNoSingularity(jobSeeker) == true) {

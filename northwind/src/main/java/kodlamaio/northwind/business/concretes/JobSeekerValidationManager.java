@@ -27,7 +27,7 @@ public class JobSeekerValidationManager {
 		}
 	}
 		public boolean checkIdentificationNoSingularity(JobSeeker jobSeeker) {
-			var result = jobSeekerDao.findByIdentificationNo(jobSeeker.getIdentificationNo());
+			var result = jobSeekerDao.findByIdentificationNo(jobSeeker.getNationalId());
 			
 			if(result != null) {
 				return false;

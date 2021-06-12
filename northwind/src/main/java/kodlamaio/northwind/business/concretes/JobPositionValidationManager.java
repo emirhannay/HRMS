@@ -17,7 +17,7 @@ public class JobPositionValidationManager {
 	}
 
 	public boolean checkJobPositionSingularity(JobPosition jobPosition) {
-		var result = jobPositionDao.findByTitle(jobPosition.getTitle());
+		var result = jobPositionDao.findByTitle(jobPosition.getJobTitle());
 		
 		if(result != null) {
 			return false;
