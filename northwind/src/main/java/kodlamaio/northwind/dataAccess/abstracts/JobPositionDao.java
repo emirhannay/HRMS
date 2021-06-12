@@ -8,5 +8,6 @@ import kodlamaio.northwind.entity.concretes.JobPosition;
 @Component
 public interface JobPositionDao extends JpaRepository<JobPosition, Integer> {
 	JobPosition findByTitle(String title);
+	JobPosition getById(int id);
 }
 	

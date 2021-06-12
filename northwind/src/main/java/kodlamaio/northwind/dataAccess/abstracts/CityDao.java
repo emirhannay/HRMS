@@ -6,6 +6,6 @@ import kodlamaio.northwind.entity.concretes.City;
 
 public interface CityDao extends JpaRepository<City, Integer>{
 
-	
+	City getById(int id);
 	
 }

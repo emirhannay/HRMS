@@ -6,4 +6,5 @@ import kodlamaio.northwind.entity.abstracts.User;
 
 public interface UserDao extends JpaRepository<User, Integer>{
 	User findUserByEmail(String email);
+	User getById(int id);
 }

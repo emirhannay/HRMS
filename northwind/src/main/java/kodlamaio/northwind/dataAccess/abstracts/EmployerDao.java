@@ -7,4 +7,5 @@ import kodlamaio.northwind.entity.concretes.JobSeeker;
 
 public interface EmployerDao extends JpaRepository<Employer, Integer>{
 	Employer findByEmail(String email);
+	Employer getById(int id);
 }
