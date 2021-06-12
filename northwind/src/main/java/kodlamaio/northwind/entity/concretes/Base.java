@@ -35,4 +35,4 @@ public class Base{
 	@Column(name= "is_deleted", columnDefinition = "boolean default false")
 	private boolean isDeleted = false;
 }
- 
+  
