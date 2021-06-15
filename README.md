@@ -16,13 +16,13 @@ V1 :
 
 V2 : 
 
-> Added swagger support to the system.
+>Added swagger support to the system.
 
-> FakeMernis service entegrated and necessary adaptation has been done.
+>FakeMernis service entegrated and necessary adaptation has been done.
 
-> Job seekers can register in the system.
+>Job seekers can register in the system.
 
-> Employers can register in the system.
+>Employers can register in the system.
 
 >The necessary "getAll" structure to list the employer has been established.
 
@@ -30,7 +30,7 @@ V2 :
 
 V3 :
 
-> Employers can add job adverts to the system.
+>Employers can add job adverts to the system.
 
 >All active job adverts in the system can be listed.
 
@@ -40,3 +40,8 @@ V3 :
 
 >Employers can close a advert in the system.
 
+V4 : 
+
+>Job seekers can be able to enter their CV into the system.
+
+>All CV information of a job seekers can be displayed.
