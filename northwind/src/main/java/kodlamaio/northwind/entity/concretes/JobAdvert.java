@@ -47,7 +47,7 @@ public class JobAdvert extends Base{
 	private boolean isOpen;
 
 	@ManyToOne
-	@JoinColumn(name = "job_position_id")
+	@JoinColumn(name = "jobPosition_id")
 	private JobPosition jobPosition;
 	
 	@ManyToOne
