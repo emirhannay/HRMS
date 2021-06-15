@@ -1,12 +1,15 @@
 package kodlamaio.northwind.entity.concretes;
 
 import javax.persistence.Column;
+
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -29,5 +32,6 @@ public class ForeignLanguageForCV extends Base{
 	
 	@ManyToOne()
 	@JoinColumn(name = "jobSeeker_id")
+	@JsonIgnore
 	private JobSeeker jobSeeker;
 }

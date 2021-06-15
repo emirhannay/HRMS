@@ -1,9 +1,9 @@
 package kodlamaio.northwind.entity.concretes;
 
-
-
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.Locale;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -28,47 +28,43 @@ import lombok.NoArgsConstructor;
 @Data
 public class JobSeeker extends User {
 
-	
-
-	
-    
 	@Column(name = "first_name")
 	private String firstName;
+
 	@Column(name = "last_name")
 	private String lastName;
+
 	@Column(name = "national_id")
 	private String nationalId;
+
 	@Column(name = "date_of_birth")
 	private LocalDate birthDate;
-	@Column(name ="is_verified", columnDefinition = "boolean default false")
+
+	@Column(name = "is_verified", columnDefinition = "boolean default false")
 	private boolean isVerified;
-	
+
 	@JsonIgnore
 	@OneToMany(mappedBy = "jobSeeker")
 	private List<SchoolForCV> schools;
-	
+
 	@JsonIgnore
 	@OneToMany(mappedBy = "jobSeeker")
 	private List<ProgrammingSkillForCV> programingSkills;
-	
+
 	@JsonIgnore
 	@OneToMany(mappedBy = "jobSeeker")
 	private List<ForeignLanguageForCV> languages;
-	
+
 	@JsonIgnore
 	@OneToMany(mappedBy = "jobSeeker")
 	private List<ExperienceForCV> experiences;
-	
+
 	@JsonIgnore
 	@OneToMany(mappedBy = "jobSeeker")
 	private List<CoverLetterForCV> coverLetters;
 
 	@JsonIgnore
-	@OneToOne(mappedBy = "jobSeeker", optional = false, fetch=FetchType.LAZY)
+	@OneToOne(mappedBy = "jobSeeker", optional = false, fetch = FetchType.LAZY)
 	private ImageForCV image;
 
-	
-
-	
 }
-	

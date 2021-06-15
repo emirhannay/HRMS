@@ -8,6 +8,6 @@ import kodlamaio.northwind.entity.concretes.ProgrammingSkillForCV;
 
 public interface ProgrammingSkillForCVDao extends JpaRepository<ProgrammingSkillForCV, Integer> {
 	ProgrammingSkillForCV getById(int id);
-	List<ProgrammingSkillForCV> getAllByJobseeker_id(int id);
+	List<ProgrammingSkillForCV> getAllByJobSeeker_id(int id);
 
 }

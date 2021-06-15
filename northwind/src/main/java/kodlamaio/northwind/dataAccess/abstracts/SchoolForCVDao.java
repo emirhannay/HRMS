@@ -8,7 +8,7 @@ import kodlamaio.northwind.entity.concretes.SchoolForCV;
 
 public interface SchoolForCVDao extends JpaRepository<SchoolForCV, Integer>{
 	SchoolForCV getById(int id);
-	List<SchoolForCV> getAllByJobseeker_idOrderByEndAtDesc(int id);
-	List<SchoolForCV> getAllByJobseeker_id(int id);
+	List<SchoolForCV> getAllByJobSeeker_idOrderByEndAtDesc(int id);
+	List<SchoolForCV> getAllByJobSeeker_id(int id);
 
 }

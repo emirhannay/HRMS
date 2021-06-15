@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Table(name = "cv_cover_letters")
 @NoArgsConstructor
-public class CoverLetterForCV {
+public class CoverLetterForCV extends Base{
 
 	public CoverLetterForCV(String content, int jobSeekerId) {
 		super();
@@ -30,4 +30,4 @@ public class CoverLetterForCV {
 	@JoinColumn(name = "jobSeeker_id")
 	@JsonIgnore
 	private JobSeeker jobSeeker;
-}
+}  

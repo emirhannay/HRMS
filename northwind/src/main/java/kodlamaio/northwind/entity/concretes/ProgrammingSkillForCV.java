@@ -6,6 +6,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,5 +24,6 @@ public class ProgrammingSkillForCV extends Base {
 	
 	@ManyToOne()
 	@JoinColumn(name = "jobSeeker_id")
+	@JsonIgnore
 	private JobSeeker jobSeeker;
 }

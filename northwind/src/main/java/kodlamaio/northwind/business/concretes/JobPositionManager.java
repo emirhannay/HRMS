@@ -6,11 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import kodlamaio.northwind.business.abstracts.JobPositionService;
-import kodlamaio.northwind.core.utulities.results.DataResult;
-import kodlamaio.northwind.core.utulities.results.ErrorResult;
-import kodlamaio.northwind.core.utulities.results.Result;
-import kodlamaio.northwind.core.utulities.results.SuccessDataResult;
-import kodlamaio.northwind.core.utulities.results.SuccessResult;
+import kodlamaio.northwind.core.utilities.results.DataResult;
+import kodlamaio.northwind.core.utilities.results.ErrorResult;
+import kodlamaio.northwind.core.utilities.results.Result;
+import kodlamaio.northwind.core.utilities.results.SuccessDataResult;
+import kodlamaio.northwind.core.utilities.results.SuccessResult;
 import kodlamaio.northwind.dataAccess.abstracts.JobPositionDao;
 import kodlamaio.northwind.entity.concretes.JobPosition;
 

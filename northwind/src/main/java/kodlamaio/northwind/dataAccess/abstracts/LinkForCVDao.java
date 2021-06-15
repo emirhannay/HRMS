@@ -8,5 +8,5 @@ import kodlamaio.northwind.entity.concretes.LinkForCV;
 
 public interface LinkForCVDao extends JpaRepository<LinkForCV, Integer>{
 	LinkForCV getById(int id);
-	List<LinkForCV> getAllByJobseeker_id(int id);
+	List<LinkForCV> getAllByJobSeeker_id(int id);
 }
