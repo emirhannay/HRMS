@@ -1,7 +1,7 @@
 # HRMS
-We are developing an HRMS project in my teacher Engin Demiroğ's java camp.
+**We are developing an HRMS project in my teacher Engin Demiroğ's java camp.
 I hope this project will be beneficial for software sector. 
-In this readme file, I aim to share the development of the project in stages.
+In this readme file, I aim to share the development of the project in stages.**
 
 V1 : 
 
